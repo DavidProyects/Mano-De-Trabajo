@@ -1,11 +1,11 @@
-@font-face {
+/*@font-face {
     font-family: "TITLE";
-    src: url(/src/app/Components/home/FUENTES/aremat\ font.ttf);   
+    src: url(../../../assets/FUENTES/aremat\ font.ttf);   
 }
 @font-face {
     font-family: "BODY";
-    src: url(/src/app/Components/home/FUENTES/GOTHIC.TTF);   
-}
+    src: url(../../../assets/FUENTES/GOTHIC.TTF);  
+}*/
 
 body{
     margin: 0;
@@ -84,7 +84,7 @@ body{
     width: 100%;
     height: 520px;
     background-color: blue;
-    background-image: url(/src/app/Components/home/nosotros.png);
+    background-image: url(../../../assets/nosotros/nosotros.png);
     
 
 }
@@ -99,12 +99,12 @@ body{
 #us #img{
     background-color: yello;
     margin-right: px;
-    background-image: url(/src/app/Components/home/grupo.png);
+    background-image: url(../../../assets/nosotros/grupo.png);
     background-repeat: no-repeat;
     position: relative;
 }
 #us #text{
-margin-left: 170px;
+margin-left: 11rem;
 background-color: bisqu;
 
 }
@@ -116,7 +116,7 @@ background-color: bisqu;
 }
 #us #text p{
     font-size: 1.5em;
-    padding: 30px 50px 0 50px;
+    padding: 5% 10% 0 10%;
     text-align: justify;
     font-family: BODY;
     }
@@ -125,7 +125,7 @@ background-color: bisqu;
 
         width: 100%;
         height: 520px;
-        background-color: yello;
+        background-color:white;
     }
 
     #offers h3{
@@ -139,7 +139,7 @@ background-color: bisqu;
         width: 315px;
         height: 315px;
         float: left;
-        margin: 20px;
+        margin: 1.2rem;
         background-color: #329b93;
         cursor: pointer;
     }
@@ -147,7 +147,7 @@ background-color: bisqu;
         color: white;
         font-family: BODY;
         font-size: 2em;
-        margin-top: 120px;
+        margin-top: 40%;
         text-align: center;
         opacity: 0;
 
@@ -159,42 +159,42 @@ background-color: bisqu;
 
     #of1 {
 
-        background-image: url(/src/app/Components/home/ofertas/cuidado.png);
+        background-image: url(../../../assets/ofertas/cuidado.png);
 
     }
     #of2 {
 
-        background-image: url(/src/app/Components/home/ofertas/cocina.png);
+        background-image: url(../../../assets/ofertas/cocina.png);
 
     }
 
     #of3 {
 
-        background-image: url(/src/app/Components/home/ofertas/limpiar.png);
+        background-image: url(../../../assets/ofertas/limpiar.png);
 
     }
 
     #of4 {
 
-        background-image: url(/src/app/Components/home/ofertas/otro.png);
+        background-image: url(../../../assets/ofertas/otro.png);
 
     }
     
     #contact{
 
-width: 100%;
-height: 420px;
-background-color: violet;
-background-image: url(../../../assets/footer.png);
+        width: 100%;
+        height: 420px;
+        background-color: violet;
+        background-image: url(../../../assets/redes/footer.png);
 
     }
 
     #contact div{
-        background-color: re;
+        background-color: ;
         width: 420px;
         height: 240px;
         float: left;
-        margin: 25px;
+        margin: 1.6rem;
     }
     #contact div h2{
 
@@ -212,7 +212,7 @@ background-image: url(../../../assets/footer.png);
     }
     #contact div img{
         float: left;
-        padding: 0 20px 0 15px;
+        padding: 0 1rem 0 1rem;
         cursor: pointer;
     }
 
@@ -224,6 +224,6 @@ background-image: url(../../../assets/footer.png);
         padding: 0;
         margin: 0 0 0 68%;
         border-radius: 80px;
-    background-image: url(/src/app/Components/home/logo-footer.png);
+    background-image: url(../../../assets/redes/logo-footer.png);
     
     }
