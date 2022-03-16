@@ -8,6 +8,12 @@
     src: url(../../../assets/FUENTES/GOTHIC.TTF);  
 }*/
 
+.temp {
+    background-color: blue;
+    box-sizing: border-box;
+    height: 5rem;
+}
+
 body{
     margin: 0;
     padding: 0;
