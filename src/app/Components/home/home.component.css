@@ -206,6 +206,7 @@ background-color: bisqu;
         width: 100%;
         height: 520px;
         background-color:re;
+        justify-content: space-evenly;
     }
 
     #offers h3{
@@ -214,6 +215,7 @@ background-color: bisqu;
         color: #56008c;
         text-align: center;
     }
+
     #offers div{
 
         width: 315px;
@@ -272,7 +274,6 @@ background-color: bisqu;
     }
 
     #contact div{
-        background-color: ;
         width: 420px;
         height: 240px;
         float: left;

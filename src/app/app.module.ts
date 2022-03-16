@@ -27,6 +27,7 @@ import { DetailsEmpleadorComponent } from './Components/details-empleador/detail
     PagePriComponent,
     DetailsComponent,
     DetailsEmpleadorComponent,
+    FooterComponent,
 
   ],
   imports: [
