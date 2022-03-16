@@ -1,14 +1,32 @@
 
 <body>
 
-<header></header>
+<header>
+
+<input type="checkbox" id="btn-menu">
+<label for="btn-menu"><img src="../../../assets/barra/menu.png" alt=""></label>
+<nav class="menu">
+
+<ul>
+  <a href="#carouselExampleIndicators"><img src="../../../assets/redes/logo-footer.png" alt=""></a>
+  <li><strong><a href="#us-btn">Nosotros</a></strong></li>
+  <li><strong><a href="#offers-btn">Ofertas</a></strong></li>
+  <li><strong><a href="">Empleado</a></strong></li>
+  <li><strong><a href="">Empleador</a></strong></li>
+  <li><strong><a href="#contact">Contacto</a></strong></li>
+</ul>
+
+
+</nav>
+
+</header>
 
 <section>
   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color:#56008c;"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: #56008c;" ></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: #56008c;" ></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -22,13 +40,14 @@
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color:#56008c; border-radius: 25px;"></span>
+      
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" >
+      <span class="carousel-control-next-icon" aria-hidden="true" style="background-color:#56008c; border-radius: 25px;"  ></span>
+      <span id="us-btn"></span>
     </button>
+    
   </div>
   
 
@@ -71,6 +90,7 @@
 <div id="text">
   <h2>Nosotros</h2>
  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi nostrum eum, quo quis nam dignissimos pariatur consequatur laboriosam possimus perferendis consequuntur laudantium dolor aut, quibusdam veritatis, ipsa autem cum perspiciatis.</p>
+ <span id="offers-btn"></span>
 </div>
 
 </section>
