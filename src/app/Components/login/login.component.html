@@ -1,29 +1,31 @@
 <div class="container m-5">
     <div class="row">
-        <div class=" col-lg-6 offset-3">
+        <div class=" col-lg-4 offset-4">
             <div class="card box1">
-                <div class="card-body text-center">
-                    <h1>Iniciar Sesion</h1>
+                <div class="card-body text-white">
+                    <div class="mb-3 float-end volverbtn">
+                        <a routerLink="/" class="float-end"><i class="fa-solid fa-circle-xmark"></i></a>
+                    </div>
+                    <h1>Iniciar Sesion</h1>                        
+                    <p>¡Muchas personas por conocer!</p>
                     <form [formGroup]='productForm' class="m-3" (ngSubmit)="login()" >
                         <div class="mb-3">
-                            <input type="text" class="form-control form-control-lg" formControlName="Correo" placeholder="Correo" >
+                            <h5 class="text-dark">Correo</h5>
+                            <input type="text" class="form-control form-control-lg" formControlName="Correo" placeholder="Example@email.com" >
                             <div class="text-danger"
                             *ngIf="productForm.get('Correo')?.hasError('required') && productForm.get('Correo')?.touched">                            
                             <span>Correo <strong> Es obligatorio</strong></span>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <input type="password" class="form-control form-control-lg" formControlName="contraseña" placeholder="Contraseña" >
+                            <h5 class="text-dark">Contraseña</h5>
+                            <input type="password" class="form-control form-control-lg" formControlName="contraseña" placeholder="***" >
                             <div class="text-danger"
                             *ngIf="productForm.get('contraseña')?.hasError('required') && productForm.get('contraseña')?.touched">                            
                             <span>La Contraseña <strong> Es obligatoria</strong></span>
                           </div>
                         </div>
-                        <div class="mb-3">
-                            <button routerLink="/" class="btn btn-secondary btn-lg float-start">VOLVER</button>
-                            <button type="submit" [disabled]="productForm.invalid" class="btn btn-success btn-lg float-end">Ingresar</button>
-                            <button routerLink="/register" type="button" class="btn btn-primary btn-lg ">¿Aún no tienes cuenta?</button>
-                        </div>
+
                     </form>
                 </div>
                 
