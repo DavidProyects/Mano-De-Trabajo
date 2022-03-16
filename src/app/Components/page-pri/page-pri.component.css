@@ -63,7 +63,7 @@ position: relative;
     border: 1px solid #ced4da;
     -webkit-appearance: none;
     appearance: none;
-    border-radius: 0.25rem;
+    border-radius: 10px;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
