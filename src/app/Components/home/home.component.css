@@ -14,7 +14,7 @@ body{
 }
 
 header{
-padding: 25px 0 25px 0 ;
+padding: 0px 0 25px 0 ;
 width: 100%;
 background-color: white;
 border-bottom: 5px solid #56008c;
@@ -61,8 +61,41 @@ list-style: none;
 padding: 0;
 display: flex;
 justify-content: flex-end;
+padding-top: 3%;
 
+}
+.menu ul #conten-registro{
+    margin-top: -2.5%;
+    margin-left: 41%;
+    text-decoration: none;
+    background-color: yello;
+    padding: 0% 0% 0.2% 2%;
+    z-index: 4;
+    position: absolute;
+    color: #329b93;
+    border-bottom: solid 4px #56008c ;
+    font-size: 1em;
+}
 
+.menu ul #conten-registro img{
+
+    
+    height: 25px;
+    margin-left: -25px;
+    
+}
+
+.menu ul #conten-registro:hover{
+
+    
+    
+    color:#56008c;
+    border-bottom: solid 4px #329b93;
+    transition: 0.5s;
+    
+    
+    
+    
 }
 
 .menu li a{
