@@ -5,6 +5,7 @@
   <title>ManoDeTrabajo</title>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../Mano-De-Trabajo/src/app/Components/home/home.js">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,800" rel="stylesheet" />
@@ -12,4 +13,20 @@
 <body>
   <app-root></app-root>
 </body>
+<script>
+  let ventana;
+let abrir;
+let cboton;
+
+function on () {
+
+  ventana=document.getElementById("ventana");
+  cboton=document.getElementById("cierre").addEventListener("click",function(){ventana.style.display="none"},false);
+  abrir=document.getElementById("contenregistro").addEventListener("click",function(){ventana.style.display="block"},false);
+  
+  
+}
+
+window.addEventListener("load",on,false);
+</script>
 </html>
