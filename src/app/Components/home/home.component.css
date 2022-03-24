@@ -6,7 +6,122 @@
     font-family: "BODY";
     src: url(../../../assets/FUENTES/GOTHIC.TTF);  
 }*/
+/*ventana */
+#ventana{
+	
+display: none;
+position:fixed;
+left: 0;
+top:0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.41);
+overflow: auto;
+padding: 50px 0;
+box-sizing: border-box;
+	z-index: 12;
+}
 
+.venconten{
+	
+	
+position: absolute;
+top:20%;
+left:30%;
+
+color:#fff;
+margin:0 auto;
+padding: 100px;
+width: 50%;
+         
+	
+}
+#cierre{
+	
+	background-color: #56008c;
+	width:25px;
+	height: 25px;
+	color: white;
+	border-radius: 20px;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 95%;
+    
+	cursor: pointer;}
+
+
+#form{
+	
+	background-color:#329b93;
+	width: 400px;
+	padding: 3% 5% 5% 5%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	z-index: 109;
+	top: -50%;
+	
+}
+#form h2{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+}
+
+#form input{
+	width: 80%;
+	height: 20px;
+	margin: 3% 0 0 8% ;
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 20px;
+	padding: 5px;
+	
+	
+	
+}
+
+#form a{
+    text-align: center;
+	width: 50%;
+	text-decoration: none;
+	color:#56008c;
+	/*font-family: 'Quicksand', sans-serif;*/
+	background-color:white;
+	border-radius: 20px;
+	padding: 7px;
+	margin-top: 5%;
+	margin-left: 25%;
+	/*font-weight:600;*/
+		transition: all 1s;
+	font-family:segunda;
+	
+}
+
+#form a:hover{
+
+    background-color: #56008c;
+    color:white;
+    transition: 0.5s;
+    
+    
+}
+
+#form h6{
+
+    margin-left: 9%;
+    padding-top: 2%;
+}
+#form select{
+
+width: 35%;
+border-radius: 20px;
+text-align: center;
+color: #56008c;
+margin-left: 9%;
+
+}
+
+
+/*ventana*/
 body{
     margin: 0;
     padding: 0;
@@ -64,7 +179,7 @@ justify-content: flex-end;
 padding-top: 3%;
 
 }
-.menu ul #conten-registro{
+.menu ul #contenregistro{
     margin-top: -2.5%;
     margin-left: 41%;
     text-decoration: none;
@@ -75,9 +190,10 @@ padding-top: 3%;
     color: #329b93;
     border-bottom: solid 4px #56008c ;
     font-size: 1em;
+    cursor: pointer;
 }
 
-.menu ul #conten-registro img{
+.menu ul #contenregistro img{
 
     
     height: 25px;
@@ -85,7 +201,7 @@ padding-top: 3%;
     
 }
 
-.menu ul #conten-registro:hover{
+.menu ul #contenregistro:hover{
 
     
     
