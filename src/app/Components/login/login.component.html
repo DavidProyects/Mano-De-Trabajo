@@ -1,41 +1,61 @@
-<div class="container m-5">
-    <div class="row">
-        <div class=" col-lg-4 offset-4">
-            <div class="card box1">
-                <div class="card-body text-white">
-                    <div class="mb-3 float-end volverbtn">
-                        <a routerLink="/" class="float-end"><i class="fa-solid fa-circle-xmark"></i></a>
-                    </div>
-                    <h1>Iniciar Sesion</h1>                        
-                    <p>¡Muchas personas por conocer!</p>
-                    <form [formGroup]='productForm' class="m-3" (ngSubmit)="login()" >
-                        <div class="mb-3">
-                            <h5 class="text-dark">Correo</h5>
-                            <input type="text" class="form-control form-control-lg" formControlName="Correo" placeholder="Example@email.com" >
-                            <div class="text-danger"
-                            *ngIf="productForm.get('Correo')?.hasError('required') && productForm.get('Correo')?.touched">                            
-                            <span>Correo <strong> Es obligatorio</strong></span>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <h5 class="text-dark">Contraseña</h5>
-                            <input type="password" class="form-control form-control-lg" formControlName="contraseña" placeholder="***" >
-                            <div class="text-danger"
-                            *ngIf="productForm.get('contraseña')?.hasError('required') && productForm.get('contraseña')?.touched">                            
-                            <span>La Contraseña <strong> Es obligatoria</strong></span>
-                          </div>
+<main>
+<section>
+    <h1 id="empleado">Empleado</h1>
+<form id="form">
+    <div role="button" id="cierre"><img src="../../../assets/login/empleado.png" alt=""></div>
+    
+    <h2 id="d">Iniciar sesión</h2>
+    <br>
+    <h4 class="text">Correo</h4>
+    <input type="text" name="Correo" placeholder="Example@gmail.com">
+    <br>
+    <br>
 
-                          <button id="ingresar"><strong><a href="">Ingresar</a></strong></button>
-                          
+    <h4 class="text" >Contraseña</h4>
+    <input   name="Contaseña" placeholder="xxxxxxxx" type="password">
+    
+    
+    <br><br>
+    
+    
+    <a href="alerta" onclick="ingresar()" type="button"><strong>Ingresar</strong></a>
+    <br><br>
+    
+    <h3 class="text2"><a href="" >¿Olvidó su Contraseña?</a></h3>
+    <h3 class="text2"><a href="" >Regístrese Aquí</a></h3>
+    
+    </form>
+
+</section>
+
+<section id="section2">
+    <h1 id="empleador">Empleador</h1>
+    <form id="form2">
+        <div role="button" id="cierre"><img src="../../../assets/login/empleador.png" alt=""></div>
+        
+        <h2 id="d">Iniciar sesión</h2>
+        <br>
+        <h4 class="text">Correo</h4>
+        <input type="text" name="Correo" placeholder="Example@gmail.com">
+        <br>
+        <br>
+    
+        <h4 class="text" >Contraseña</h4>
+        <input   name="Contaseña" placeholder="xxxxxxxx" type="password">
+        
+        
+        <br><br>
+        
+        
+        <a href="alerta" onclick="ingresar()" type="button"><strong>Ingresar</strong></a>
+        <br><br>
+        
+        <h3 class="text2"><a href="" >¿Olvidó su Contraseña?</a></h3>
+        <h3 class="text2"><a href="" >Regístrese Aquí</a></h3>
+        
+        </form>
+    
+    </section>
 
 
-
-                        </div>
-
-                    </form>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-</div>
+</main>
