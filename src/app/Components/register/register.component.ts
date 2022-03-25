@@ -13,18 +13,16 @@ export class RegisterComponent implements OnInit {
 
   productForm: FormGroup;
 
-  constructor(  private fb: FormBuilder,) { 
+  constructor(private fb: FormBuilder,) { 
     
     this.productForm = this.fb.group({
-      nombre: ['', Validators.required],
+      Nombre: ['', Validators.required],
       apellido: ['', Validators.required],
       Correo: ['', Validators.required],
       telefono: ['', Validators.required],
       contraseña: ['', Validators.required]
     })
   }
- 
-
   ngOnInit(): void {
   }
 
@@ -33,7 +31,7 @@ export class RegisterComponent implements OnInit {
 
     const REGISTER: Resgister = {
 
-      nombre: this.productForm.get('nombre')?.value,
+      nombre: this.productForm.get('Nombre')?.value,
       apellido: this.productForm.get('apellido')?.value,
       Correo: this.productForm.get('Correo')?.value,
       telefono: this.productForm.get('telefono')?.value,

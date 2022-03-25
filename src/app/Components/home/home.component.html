@@ -28,28 +28,52 @@
     
     
     
-    <form id="form">
-<div role="button" id="cierre">x</div>
+    <form id="form" [formGroup]='productForm' class="m-3" (ngSubmit)="Registrar()">
+      <div role="button" id="cierre">x</div>
 
-<h2 id="d">Registro de sesión</h2>
+      <h2 id="d">Registro de sesión</h2>
 
-<input type="text" name="Nombre" placeholder="Nombre">
-<input type="text" name="Apellido" placeholder="Apellido">
-<input type="text" name="Telefono 1" placeholder="Telefono 1">
-<input type="text" name="Telefono 2" placeholder="Telefono 2">
-<input type="text" name="Correo" placeholder="Correo">
+      <input type="text" name="Nombre" class="form-control form-control-lg" formControlName="Nombre" placeholder="Nombre">
+      <div class="text-white mx-5"
+         *ngIf="productForm.get('Nombre')?.hasError('required') && productForm.get('Nombre')?.touched">                           
+         <span>El Nombre <strong>es obligatorio</strong></span>
+      </div>
 
-<input   name="Contaseña" placeholder="Contraseña" type="password">
-<input   name="Confirmar Contaseña" placeholder="Confirmar Contraseña" type="password">
-<br>
+      <input type="text" class="form-control form-control-lg" formControlName="apellido" placeholder="Apellido" >
+      <div class="text-white mx-5"
+        *ngIf="productForm.get('apellido')?.hasError('required') && productForm.get('apellido')?.touched">                           
+        <span>El Apellido <strong>es obligatorio</strong></span>
+      </div>
 
-<h6>¿Eres?</h6>
-<select name="seleciona">
-  <option  value="">Empleado</option> 
-  <option  value="">Empleador</option> 
-</select >
+      <input type="text" class="form-control form-control-lg" formControlName="Correo" placeholder="Correo" >
+      <div class="text-white mx-5"
+        *ngIf="productForm.get('Correo')?.hasError('required') && productForm.get('Correo')?.touched">                            
+        <span>Correo <strong> es obligatorio</strong></span>
+      </div>
 
-<a href="http://localhost:4200/login" onclick="ingresar()" type="button"><strong>Registrate</strong></a>
+      <input type="text" class="form-control form-control-lg" formControlName="telefono" placeholder="Telefono" >
+      <div class="text-white mx-5"
+        *ngIf="productForm.get('telefono')?.hasError('required') && productForm.get('telefono')?.touched">                            
+        <span>El número de telefono <strong> es obligatorio</strong></span>
+      </div>
+
+      <input type="password" class="form-control form-control-lg" formControlName="contraseña" placeholder="Contraseña" >
+      <div class="text-white mx-5"
+        *ngIf="productForm.get('contraseña')?.hasError('required') && productForm.get('contraseña')?.touched">                            
+        <span>La contraseña <strong> es obligatoria</strong></span>
+      </div>
+
+      <br>
+
+      <h6>¿Eres?</h6>
+
+      <select name="seleciona">
+        <option  value="">Empleado</option> 
+        <option  value="">Empleador</option> 
+      </select >
+      
+
+      <button routerLink="/login" type="submit" [disabled]="productForm.invalid"><strong>Registrate</strong></button>
 
 </form>
   
