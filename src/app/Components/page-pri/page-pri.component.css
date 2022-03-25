@@ -12,13 +12,14 @@ legend {
 }
 
 .legend__text{
+    margin-top: 70px;
     color: #fff;
     text-align: center;
 }
 
 .pribg{
     height: 100vh;
-    background-image: url("https://factorial.fr/wp-content/uploads/2020/10/04113434/herramientas-para-home-office.jpg");
+    background-image: url("../../../assets/OFFI.jpg");
     background-size: cover;   
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -58,7 +59,7 @@ position: relative;
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    background-color:#D0D3D4;
+    background-color:#fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
     -webkit-appearance: none;
@@ -70,9 +71,9 @@ position: relative;
 
 .newsletter__submit{ 
     position: absolute;   
-    right: 6px;
-    top: 45%;
-    height: 35%;
+    right: 5px;
+    top: 62%;
+    height: 25%;
     background: #329b93;
     color: purple;
     padding: 0 25px;
@@ -160,21 +161,33 @@ position: relative;
     width: 40px;
 }
 
+
 /*check*/
 
 .check{
     display: flex;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 0 auto;
-    padding-top: 40px;
 }
 
 .check__item{
-    width: 27%;
-    padding-right: 5px;
-    display: flex;
-    border-right: 1px solid;
+    margin-top: 100px;
+    float: right;
+    border: 0;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    outline: 0;
+    vertical-align: baseline;
+    padding-right: 70px;
+}
+
+.img__call{
+    margin-left: 80px;
+    margin-right: 80px;
+    float: right;
+    height: 400px;
+    width: 320px;
+    position: relative;
 }
 
 .point{
@@ -197,7 +210,6 @@ position: relative;
     width: 40px;
     height: 40px;
     text-align: center;
-    margin-right: 20px;
     color: #329b93;
     border-radius: 50%;
     font-size: 40px;
@@ -208,7 +220,6 @@ position: relative;
     width: 40px;
     height: 40px;
     text-align: center;
-    margin-right: 20px;
     color: #329b93;
     border-radius: 50%;
     font-size: 40px;
@@ -216,7 +227,7 @@ position: relative;
 
 .subtitles{
     text-align: center;
-    padding-top: 60px;
+    padding-top: 100px;
     font-size: 2rem;
     margin-bottom: 25px;
     color: purple;
@@ -230,6 +241,7 @@ position: relative;
 
 .check__copy{
     font-weight: 300;
+    right: 10px;
 }
 
 .copy__section{
@@ -252,4 +264,6 @@ position: relative;
     margin: 0;
     width: 80%;
 }
+
+
  
