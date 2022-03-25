@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { AppComponent } from './app.component';
 import { PerfilEmpleadorComponent } from './Components/perfil-empleador/perfil-empleador.component';
@@ -27,12 +29,14 @@ import { DetailsEmpleadorComponent } from './Components/details-empleador/detail
     PagePriComponent,
     DetailsComponent,
     DetailsEmpleadorComponent,
+    FooterComponent,
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

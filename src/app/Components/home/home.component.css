@@ -1,15 +1,235 @@
-@font-face {
+/*@font-face {
     font-family: "TITLE";
-    src: url(/src/app/Components/home/FUENTES/aremat\ font.ttf);   
+    src: url(../../../assets/FUENTES/aremat\ font.ttf);   
 }
 @font-face {
     font-family: "BODY";
-    src: url(/src/app/Components/home/FUENTES/GOTHIC.TTF);   
+    src: url(../../../assets/FUENTES/GOTHIC.TTF);  
+}*/
+/*ventana */
+#ventana{
+	
+display: none;
+position:fixed;
+left: 0;
+top:0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.41);
+overflow: auto;
+padding: 50px 0;
+box-sizing: border-box;
+	z-index: 12;
 }
 
+.venconten{
+	
+	
+position: absolute;
+top:20%;
+left:30%;
+
+color:#fff;
+margin:0 auto;
+padding: 100px;
+width: 50%;
+         
+	
+}
+#cierre{
+	
+	background-color: #56008c;
+	width:25px;
+	height: 25px;
+	color: white;
+	border-radius: 20px;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 95%;
+    
+	cursor: pointer;}
+
+
+#form{
+	
+	background-color:#329b93;
+	width: 400px;
+	padding: 3% 5% 5% 5%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	z-index: 109;
+	top: -50%;
+	
+}
+#form h2{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+}
+
+#form input{
+	width: 80%;
+	height: 20px;
+	margin: 3% 0 0 8% ;
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 20px;
+	padding: 5px;
+	
+	
+	
+}
+
+#form a{
+    text-align: center;
+	width: 50%;
+	text-decoration: none;
+	color:#56008c;
+	/*font-family: 'Quicksand', sans-serif;*/
+	background-color:white;
+	border-radius: 20px;
+	padding: 7px;
+	margin-top: 5%;
+	margin-left: 25%;
+	/*font-weight:600;*/
+		transition: all 1s;
+	font-family:segunda;
+	
+}
+
+#form a:hover{
+
+    background-color: #56008c;
+    color:white;
+    transition: 0.5s;
+    
+    
+}
+
+#form h6{
+
+    margin-left: 9%;
+    padding-top: 2%;
+}
+#form select{
+
+width: 35%;
+border-radius: 20px;
+text-align: center;
+color: #56008c;
+margin-left: 9%;
+
+}
+
+
+/*ventana*/
 body{
     margin: 0;
     padding: 0;
+    
+}
+
+header{
+padding: 0px 0 25px 0 ;
+width: 100%;
+background-color: white;
+border-bottom: 5px solid #56008c;
+z-index: 10;
+position: fixed;
+
+    
+}
+#btn-menu{
+    display: none;
+}
+header label{
+
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-right: 1px solid white;
+    background-color: #56008c;
+    display: none;
+}
+
+header label:hover{
+
+    cursor: pointer;
+    background-color: #329b93;
+}
+.menu ul img{
+
+    background-color: blac;
+    padding: 0;
+    margin: -1.5% 0px 0 -50% ;
+    height: 120px;
+    display: block;
+    justify-content:flex-end;
+    z-index: 2;
+    position:absolute;
+    
+}
+.menu ul{
+background-color: re;
+margin: 0;
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: flex-end;
+padding-top: 3%;
+
+}
+.menu ul #contenregistro{
+    margin-top: -2.5%;
+    margin-left: 41%;
+    text-decoration: none;
+    background-color: yello;
+    padding: 0% 0% 0.2% 2%;
+    z-index: 4;
+    position: absolute;
+    color: #329b93;
+    border-bottom: solid 4px #56008c ;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.menu ul #contenregistro img{
+
+    
+    height: 25px;
+    margin-left: -25px;
+    
+}
+
+.menu ul #contenregistro:hover{
+
+    
+    
+    color:#56008c;
+    border-bottom: solid 4px #329b93;
+    transition: 0.5s;
+    
+    
+    
+    
+}
+
+.menu li a{
+    display: block;
+    padding: 5px 30px;
+    transition: 0.5s;
+    transition: all 1s;
+    margin: 0 15px 0 5px;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+
+    background-color:#56008c;
+    color: white;
+
 }
 
 /*#sectionbanner  {	
@@ -84,7 +304,11 @@ body{
     width: 100%;
     height: 520px;
     background-color: blue;
-    background-image: url(/src/app/Components/home/nosotros.png);
+    background-image: url(../../../assets/nosotros/nosotros.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 1%;
+   
     
 
 }
@@ -93,19 +317,24 @@ body{
     width: 620px;
     height: 520px;
     background-color: rebeccapurpl;
+    padding-top: 3%;
     float: left;
 }
 
 #us #img{
-    background-color: yello;
+
+    background-color:re;
     margin-right: px;
-    background-image: url(/src/app/Components/home/grupo.png);
+    background-image: url(../../../assets/nosotros/grupo.png);
     background-repeat: no-repeat;
-    position: relative;
+    
+    
+    
 }
 #us #text{
-margin-left: 170px;
+margin-left: 11rem;
 background-color: bisqu;
+
 
 }
 #us #text h2{
@@ -116,7 +345,7 @@ background-color: bisqu;
 }
 #us #text p{
     font-size: 1.5em;
-    padding: 30px 50px 0 50px;
+    padding: 5% 10% 0 10%;
     text-align: justify;
     font-family: BODY;
     }
@@ -125,7 +354,8 @@ background-color: bisqu;
 
         width: 100%;
         height: 520px;
-        background-color: yello;
+        background-color:re;
+        justify-content: space-evenly;
     }
 
     #offers h3{
@@ -134,20 +364,22 @@ background-color: bisqu;
         color: #56008c;
         text-align: center;
     }
+
     #offers div{
 
         width: 315px;
         height: 315px;
         float: left;
-        margin: 20px;
+        margin: 5% 1.1% 0 1.6%;
         background-color: #329b93;
         cursor: pointer;
+        
     }
     #offers div p{
         color: white;
         font-family: BODY;
         font-size: 2em;
-        margin-top: 120px;
+        margin-top: 40%;
         text-align: center;
         opacity: 0;
 
@@ -159,42 +391,42 @@ background-color: bisqu;
 
     #of1 {
 
-        background-image: url(/src/app/Components/home/ofertas/cuidado.png);
+        background-image: url(../../../assets/ofertas/cuidado.png);
+        background-repeat: no-repeat;
 
     }
     #of2 {
 
-        background-image: url(/src/app/Components/home/ofertas/cocina.png);
+        background-image: url(../../../assets/ofertas/cocina.png);
 
     }
 
     #of3 {
 
-        background-image: url(/src/app/Components/home/ofertas/limpiar.png);
+        background-image: url(../../../assets/ofertas/limpiar.png);
 
     }
 
     #of4 {
 
-        background-image: url(/src/app/Components/home/ofertas/otro.png);
+        background-image: url(../../../assets/ofertas/otro.png);
 
     }
     
     #contact{
 
-width: 100%;
-height: 420px;
-background-color: violet;
-background-image: url(../../../assets/footer.png);
+        width: 100%;
+        height: 420px;
+        background-color: violet;
+        background-image: url(../../../assets/redes/footer.png);
 
     }
 
     #contact div{
-        background-color: re;
         width: 420px;
         height: 240px;
         float: left;
-        margin: 25px;
+        margin: 1.6rem;
     }
     #contact div h2{
 
@@ -212,7 +444,7 @@ background-image: url(../../../assets/footer.png);
     }
     #contact div img{
         float: left;
-        padding: 0 20px 0 15px;
+        padding: 0 1rem 0 1rem;
         cursor: pointer;
     }
 
@@ -224,6 +456,6 @@ background-image: url(../../../assets/footer.png);
         padding: 0;
         margin: 0 0 0 68%;
         border-radius: 80px;
-    background-image: url(/src/app/Components/home/logo-footer.png);
+    background-image: url(../../../assets/redes/logo-footer.png);
     
     }

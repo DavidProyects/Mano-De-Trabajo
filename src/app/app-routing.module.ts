@@ -1,4 +1,5 @@
 
+
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -11,6 +12,7 @@ import { RegisterComponent } from './Components/register/register.component';
 import { PagePriComponent } from './Components/page-pri/page-pri.component';
 import { DetailsComponent } from './Components/details/details.component';
 import { DetailsEmpleadorComponent } from './Components/details-empleador/details-empleador.component';
+import { FooterComponent } from './Components/footer/footer.component';
 
 
 
@@ -23,6 +25,7 @@ const routes: Routes = [
   {path: 'home', component: PagePriComponent},
   {path: 'details', component: DetailsComponent},
   {path: 'datailsempleador', component: DetailsEmpleadorComponent},
+  {path: 'footer', component: FooterComponent},
 
   {path: '404', component:NotfoundComponent},
   {path: '**', redirectTo: '404', pathMatch: 'full'},

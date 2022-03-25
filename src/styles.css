@@ -1,7 +1,233 @@
 /* You can add global styles to this file, and also import other style files */
+/*@font-face {
+    font-family: "TITLE";
+    src: url(../../../assets/FUENTES/aremat\ font.ttf);   
+}
+@font-face {
+    font-family: "BODY";
+    src: url(../../../assets/FUENTES/GOTHIC.TTF);  
+}*/
+
+.temp {
+    background-color: blue;
+    box-sizing: border-box;
+    height: 5rem;
+}
+
 body{
-    background: #ADA996;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+    padding: 0;
+    
+}
+.static{
+    padding: 25px 0 25px 0 ;
+    width: 100%;
+    background-color: white;
+    border-bottom: 5px solid #56008c;
+    z-index: 1;
+    position: inherit;
+    height: 5rem;
+}
+
+header{
+    padding: 25px 0 25px 0 ;
+    width: 100%;
+    background-color: white;
+    border-bottom: 5px solid #56008c;
+    z-index: 10;
+    position: fixed;
+
+    
+}
+#btn-menu{
+    display: none;
+}
+header label{
+
+    display: block;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-right: 1px solid white;
+    background-color: #56008c;
+    display: none;
+}
+
+header label:hover{
+
+    cursor: pointer;
+    background-color: #329b93;
+}
+.menu ul img{
+
+    background-color: blac;
+    padding: 0;
+    margin: -1.5% 0px 0 -50% ;
+    height: 120px;
+    display: block;
+    justify-content:flex-end;
+    z-index: 2;
+    position:absolute;
+    
+}
+.menu ul{
+background-color: re;
+margin: 0;
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: flex-end;
+
 
 }
+
+.menu li a{
+    display: block;
+    padding: 5px 30px;
+    transition: 0.5s;
+    transition: all 1s;
+    margin: 0 15px 0 5px;
+    color: black;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.menu li a:hover{
+
+    background-color:#56008c;
+    color: white;
+
+}
+
+/*#sectionbanner  {	
+	width: 100%;
+	height: 795px;
+    background-color: ;
+}
+
+#sectionbanner div {
+	width: 100%;
+	height: 795px;
+	display: flex;
+}
+
+#sectionbanner article{
+	width: 100%;
+	height: 795px;
+} 
+
+.slider{
+	width: 100%;
+	height:  770px;
+	margin: auto;
+	position: relative;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.slider img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity:0 ;
+	transition: all 0.7s;
+}
+
+.slider video{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity:0 ;
+	transition: all 0.7s;
+}
+
+.slider input[type="radio"] {
+	position: relative;
+	z-index: 50;
+	margin: 5px;	
+}
+
+.slider input[type="radio"]:checked ~ img {
+	opacity: 1;
+} 
+
+.slider input[type="radio"]:checked ~ video {
+	opacity: 1;
+}*/
+
+
+
+#us div{
+
+    width: 620px;
+    height: 520px;
+    background-color: rebeccapurpl;
+    padding-top: 3%;
+    float: left;
+}
+
+#us #text{
+margin-left: 11rem;
+background-color: bisqu;
+
+
+}
+#us #text h2{
+    font-size: 2em;
+    text-align: center;
+    font-family: "TITLE";
+    color: #329b93;
+}
+#us #text p{
+    font-size: 1.5em;
+    padding: 5% 10% 0 10%;
+    text-align: justify;
+    font-family: BODY;
+    }
+
+    #offers{
+
+        width: 100%;
+        height: 520px;
+        background-color:re;
+        justify-content: space-evenly;
+    }
+
+    #offers h3{
+        font-size: 2em;
+        font-family: TITLE;
+        color: #56008c;
+        text-align: center;
+    }
+
+    #offers div{
+
+        width: 315px;
+        height: 315px;
+        float: left;
+        margin: 5% 1.1% 0 1.6%;
+        background-color: #329b93;
+        cursor: pointer;
+        
+    }
+    #offers div p{
+        color: white;
+        font-family: BODY;
+        font-size: 2em;
+        margin-top: 40%;
+        text-align: center;
+        opacity: 0;
+
+    }
+    #offers div:hover p{
+        opacity: 1;
+        transition: 1s;
+    }
+

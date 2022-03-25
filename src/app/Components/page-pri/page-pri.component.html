@@ -1,6 +1,22 @@
-<header class="temp Up-bac">
-    <h1 class="text-center Up-bac">Aqui va el header</h1>
-</header>
+<header id="header1">
+
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="../../../assets/barra/menu.png" alt=""></label>
+    <nav class="menu">
+    
+    <ul>
+      <a href="#carouselExampleIndicators"><img src="../../../assets/redes/logo-footer.png" alt=""></a>
+      <li><strong><a routerLink="/login"href="">Iniciar Sesion</a></strong></li>
+      <li><strong><a href="/register" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Registrate</a></strong></li>
+      <li><strong><a href="#contact">Contacto</a></strong></li>
+    </ul>
+    
+    
+    </nav>
+    
+    </header>
+
+<div class="temp"></div>
 <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
 <div class="of1">
@@ -72,3 +88,51 @@
         </div>
     </section>    
 </div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form [formGroup]='productForm' class="m-3" (ngSubmit)="Registrar()" >
+            <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" formControlName="nombre" placeholder="Nombre">
+                <div class="text-danger" 
+                *ngIf="productForm.get('nombre')?.hasError('required') && productForm.get('nombre')?.touched">
+                  <span>El nombre <strong>Es obligatorio</strong></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" formControlName="apellido" placeholder="Apellido" >
+                <div class="text-danger"
+                *ngIf="productForm.get('apellido')?.hasError('required') && productForm.get('apellido')?.touched">                           
+                <span>El Apellido <strong>Es obligatorio</strong></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" formControlName="Correo" placeholder="Correo" >
+                <div class="text-danger"
+                *ngIf="productForm.get('Correo')?.hasError('required') && productForm.get('Correo')?.touched">                            
+                <span>Correo <strong> Es obligatorio</strong></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control form-control-lg" formControlName="telefono" placeholder="Telefono" >
+                <div class="text-danger"
+                *ngIf="productForm.get('telefono')?.hasError('required') && productForm.get('telefono')?.touched">                            
+                <span>El número de telefono <strong> Es obligatorio</strong></span>
+                </div>
+            </div>
+            <div class="mb-3">
+                <input type="password" class="form-control form-control-lg" formControlName="contraseña" placeholder="Contraseña" >
+                <div class="text-danger"
+                *ngIf="productForm.get('contraseña')?.hasError('required') && productForm.get('contraseña')?.touched">                            
+                <span>La Contraseña <strong> Es obligatoria</strong></span>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button"class="btn btn-secondary btn-lg float-start" data-bs-dismiss="modal">VOLVER</button>
+                <button type="submit" [disabled]="productForm.invalid" class="btn btn-success btn-lg float-end">REGISTRAR</button>
+            </div>            
+        </form>
+      </div>
+    </div>
+  </div>
+
