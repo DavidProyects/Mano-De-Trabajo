@@ -1,38 +1,286 @@
-.text-danger{
-    text-align: start;
-    margin-left: 7px;
+main{
+width: 100%;
+height: 50em;    background-image: url(../../../assets/login/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
 }
-.box1{
-    background: #329b93;  /* fallback for old browsers */
-}
-.container{
-    padding-bottom: 5rem;
-}
-.ingb{
-    size: space-evenly;
-}
-.volverbtn{
-    width: 1rem;
-    height: 1rem;
-}
-
-.container m-5{
-    background-color: blue;
-}
-
-#ingresar {
-    width: 100%;
-    height: 60px;
-    background-color: white;
-    margin-top: 5%;
-    border-radius: 20px;
+section{
+    background-color:rgba(255, 0, 0, 0);
+    width: 50%;
+    height: 50em;
+    z-index: 10;
+    position: static;
+    
+    
+    padding-top: 12%;
+    padding-bottom: 5%;
+    float: left;
+    transition: all 1s;
 
 }
 
-#ingresar a{
+section:hover{
+    background-color:rgba(128, 128, 128, 0.459);
+    
+    transition: 1.5s;
+}
+ 
+#empleado{
+    z-index: 22;
+    position:absolute;
+    margin: -1.5em 0 0 6.5em ;
+    opacity: 0;
+    transition: all 1s;
+}
+section:hover #empleado{
+    color: black;
+    opacity: 1;
+    transition:1.5s;
+}
+
+#section2 {
+    background-color:rgba(255, 0, 0, 0);
+}
+#section2:hover{
+    background-color:rgba(128, 128, 128, 0.459);
+    
+    transition: 1.5s;
+}
+#section2:hover #empleador{
+    color: white;
+    opacity: 1;
+    transition:1.5s;
+}
+
+#empleador{
+    z-index: 23;
+    position:absolute;
+    margin: -1.5em 0 0 6.5em ;
+    color: white;
+    opacity: 0;
+    
+}
+#cierre{
+	
+	background-color: #56008c;
+    
+	width:45px;
+	height: 45px;
+	color: white;
+	border-radius: 50px;
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+	margin-left: 15%;
+    margin-top: 1%;
+    z-index: 10;
+    position:absolute;
+    font-size: 1.9em;
+    
+	cursor: pointer;}
+
+#form{
+	margin: auto;
+    
+    margin-bottom: 5%;
+	background-color:#329b93;
+	width: 300px;
+	padding: 0% 3% 5% 2%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	z-index: 109;
+	top: -50%;
+	
+}
+
+
+
+#form h2{
+	
+	font-family: 'Quicksand', sans-serif;
+	color: white;
+    padding-top: 8%;
+}
+
+#form input{
+	width: 90%;
+	height: 30px;
+	margin: 3% 0 0 1% ;
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 20px;
+	padding: 5px;
+    
+	
+	
+	
+}
+
+#form .text{
+    color: black;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.692);
+
+}
+
+#form .text2{
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    
+    border: 0;
+    background-color: none;
+}
+#form .text2 a{
     text-decoration: none;
-    color: #56008c;
+    background-color:#329b93;
+    border-radius: 0;
+    color: white;
+
+}
+
+#form a{
+    text-align: center;
+	width: 90%;
+	text-decoration: none;
+	color:#56008c;
+	/*font-family: 'Quicksand', sans-serif;*/
+	background-color:white;
+	border-radius: 20px;
+	padding: 7px;
+	margin-top: 5%;
+	margin-left: 6%;
+	/*font-weight:600;*/
+		transition: all 1s;
+	font-family:segunda;
+	
+}
+
+#form a:hover{
+
+    background-color: #56008c;
+    color:white;
+    transition: 0.5s;
     
-    font-size: 1.2em;
     
-} 
+}
+
+#form h6{
+
+    margin-left: 9%;
+    padding-top: 2%;
+}
+#form select{
+
+width: 35%;
+border-radius: 20px;
+text-align: center;
+color: #56008c;
+margin-left: 9%;
+
+}
+
+/**************************************from2*******************************/
+
+
+#form2{
+	margin: auto;
+    
+    margin-bottom: 5%;
+	background-color:white;
+    border:#56008c solid 4px;
+	width: 300px;
+	padding: 0% 3% 5% 2%;
+	box-sizing: border-box;
+	border-radius: 20px;
+	z-index: 109;
+	top: -50%;
+	
+}
+
+#form2:hover + section2{
+    background-color: #56008c;
+}
+
+
+#form2 h2{
+	
+	font-family: 'Quicksand', sans-serif;
+	color:#56008c;
+    padding-top: 8%;
+}
+
+#form2 input{
+	width: 90%;
+	height: 30px;
+	margin: 3% 0 0 1% ;
+	font-family: 'Quicksand', sans-serif;
+	border-radius: 20px;
+	padding: 5px;
+    
+	
+	
+	
+}
+
+#form2 .text{
+    color: black;
+    border-bottom: 4px solid #56008cda;
+
+}
+
+#form2 .text2{
+    
+    text-align: center;
+    font-size: 0.8em;
+    
+    border: 0;
+    background-color: none;
+}
+#form2 .text2 a{
+    text-decoration: none;
+    background-color:white;
+    border-radius: 0;
+    color:#56008c;
+
+}
+
+#form2 a{
+    text-align: center;
+	width: 90%;
+	text-decoration: none;
+	color:white;
+	/*font-family: 'Quicksand', sans-serif;*/
+	background-color:#329b93;
+	border-radius: 20px;
+	padding: 7px;
+	margin-top: 5%;
+	margin-left: 6%;
+	/*font-weight:600;*/
+		transition: all 1s;
+	font-family:segunda;
+	
+}
+
+#form2 a:hover{
+
+    background-color: #56008c;
+    
+    transition: 0.5s;
+    
+    
+}
+
+#form2 h6{
+
+    margin-left: 9%;
+    padding-top: 2%;
+}
+#form2 select{
+
+width: 35%;
+border-radius: 20px;
+text-align: center;
+color: #56008c;
+margin-left: 9%;
+
+}
