@@ -1,53 +1,59 @@
-<div class="container mt-5">
-    <div class="row">
-        <div class=" col-lg-6 offset-3">
-            <div class="card box1">
-                <div class="card-body text-center">
-                    <h1>Registro de Usuario Nuevo</h1>
-                    <form [formGroup]='productForm' class="m-3" (ngSubmit)="Registrar()" >
-                        <div class="mb-3">
-                            <input type="text" class="form-control form-control-lg" formControlName="nombre" placeholder="Nombre">
-                            <div class="text-danger" 
-                            *ngIf="productForm.get('nombre')?.hasError('required') && productForm.get('nombre')?.touched">
-                              <span>El nombre <strong>Es obligatorio</strong></span>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control form-control-lg" formControlName="apellido" placeholder="Apellido" >
-                            <div class="text-danger"
-                            *ngIf="productForm.get('apellido')?.hasError('required') && productForm.get('apellido')?.touched">                           
-                            <span>El Apellido <strong>Es obligatorio</strong></span>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control form-control-lg" formControlName="Correo" placeholder="Correo" >
-                            <div class="text-danger"
-                            *ngIf="productForm.get('Correo')?.hasError('required') && productForm.get('Correo')?.touched">                            
-                            <span>Correo <strong> Es obligatorio</strong></span>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control form-control-lg" formControlName="telefono" placeholder="Telefono" >
-                            <div class="text-danger"
-                            *ngIf="productForm.get('telefono')?.hasError('required') && productForm.get('telefono')?.touched">                            
-                            <span>El número de telefono <strong> Es obligatorio</strong></span>
-                            </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="password" class="form-control form-control-lg" formControlName="contraseña" placeholder="Contraseña" >
-                            <div class="text-danger"
-                            *ngIf="productForm.get('contraseña')?.hasError('required') && productForm.get('contraseña')?.touched">                            
-                            <span>La Contraseña <strong> Es obligatoria</strong></span>
-                          </div>
-                        </div>
-                        <div class="mb-3">
-                            <button routerLink="/login" class="btn btn-secondary btn-lg float-start">VOLVER</button>
-                            <button type="submit" [disabled]="productForm.invalid" class="btn btn-success btn-lg float-end">REGISTRAR</button>
-                        </div>
-                    </form>
-                </div>
-                
+<div id="ventana">
+		
+    <div class="venconten">     
+      
+        <form id="form" [formGroup]='productForm' class="m-3" (ngSubmit)="Registrar()">
+            <div role="button" id="cierre">x</div>
+    
+            <h2 id="d">Registro de sesión</h2>
+    
+            <input type="text" name="Nombre" class="form-control form-control-lg" formControlName="Nombre" placeholder="Nombre">
+            <div class="text-white mx-5"
+            *ngIf="productForm.get('Nombre')?.hasError('required') && productForm.get('Nombre')?.touched">                           
+            <span>El Nombre <strong>es obligatorio</strong></span>
             </div>
-        </div>
+    
+            <input type="text" class="form-control form-control-lg" formControlName="apellido" placeholder="Apellido" >
+            <div class="text-white mx-5"
+            *ngIf="productForm.get('apellido')?.hasError('required') && productForm.get('apellido')?.touched">                           
+            <span>El Apellido <strong>es obligatorio</strong></span>
+            </div>
+    
+            <input type="text" class="form-control form-control-lg" formControlName="Correo" placeholder="Correo" >
+            <div class="text-white mx-5"
+            *ngIf="productForm.get('Correo')?.hasError('required') && productForm.get('Correo')?.touched">                            
+            <span>Correo <strong> es obligatorio</strong></span>
+            </div>
+    
+            <input type="text" class="form-control form-control-lg" formControlName="telefono" placeholder="Telefono" >
+            <div class="text-white mx-5"
+            *ngIf="productForm.get('telefono')?.hasError('required') && productForm.get('telefono')?.touched">                            
+            <span>El número de telefono <strong> es obligatorio</strong></span>
+            </div>
+    
+            <input type="password" class="form-control form-control-lg" formControlName="contraseña" placeholder="Contraseña" >
+            <div class="text-white mx-5"
+            *ngIf="productForm.get('contraseña')?.hasError('required') && productForm.get('contraseña')?.touched">                            
+            <span>La contraseña <strong> es obligatoria</strong></span>
+            </div>
+    
+            <br>
+    
+            <h6>¿Eres?</h6>
+    
+            <select name="seleciona">
+            <option  value="">Empleado</option> 
+            <option  value="">Empleador</option> 
+            </select >
+            
+    
+            <button type="submit" [disabled]="productForm.invalid"><strong>Registrate</strong></button>
+    
+        </form>
+    
+    
+      
     </div>
-</div>
+    
+    
+  </div>
