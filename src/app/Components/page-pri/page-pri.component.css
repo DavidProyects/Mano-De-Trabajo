@@ -13,13 +13,14 @@ legend {
 
 .legend__text{
     margin-top: 70px;
-    color: #fff;
+    color:#56008c;
     text-align: center;
+    font-family: title;
 }
 
 .pribg{
     height: 100vh;
-    background-image: url("../../../assets/OFFI.jpg");
+    background-image: url("../../../assets/imagen4.jpg");
     background-size: cover;   
     background-repeat: no-repeat;
     background-attachment: fixed;
