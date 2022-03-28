@@ -16,6 +16,7 @@ import { NotfoundComponent } from './Components/notfound/notfound.component';
 import { PagePriComponent } from './Components/page-pri/page-pri.component';
 import { DetailsComponent } from './Components/details/details.component';
 import { DetailsEmpleadorComponent } from './Components/details-empleador/details-empleador.component';
+import { PerfilEmpleadoComponent } from './Components/perfil-empleado/perfil-empleado.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { DetailsEmpleadorComponent } from './Components/details-empleador/detail
     DetailsComponent,
     DetailsEmpleadorComponent,
     FooterComponent,
+    PerfilEmpleadoComponent,
 
   ],
   imports: [

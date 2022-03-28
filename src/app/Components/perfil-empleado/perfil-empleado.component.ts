@@ -1,19 +1,17 @@
-import { UsuariosService } from './../../Services/usuarios.service';
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
 
 @Component({
-  selector: 'app-perfil-empleador',
-  templateUrl: './perfil-empleador.component.html',
-  styleUrls: ['./perfil-empleador.component.css']
+  selector: 'app-perfil-empleado',
+  templateUrl: './perfil-empleado.component.html',
+  styleUrls: ['./perfil-empleado.component.css']
 })
-export class PerfilEmpleadorComponent implements OnInit {
+export class PerfilEmpleadoComponent implements OnInit {
 
-  constructor( private _Usuarioservice: UsuariosService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
-
   async editar() {
     const { value: text } = await Swal.fire({
       input: 'textarea',
@@ -51,4 +49,6 @@ export class PerfilEmpleadorComponent implements OnInit {
       imageAlt: 'Custom image',
     })
   }
+
+  
 }

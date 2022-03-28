@@ -1,0 +1,35 @@
+
+.temp {
+    background-color: blue;
+    box-sizing: border-box;
+    height: 5rem;
+}
+
+.cleft{
+    height: auto;
+    width: 30rem;
+}
+.sectionp {
+    display: flex;
+}
+.row{
+    width: 75rem;
+    height: 20rem; 
+     
+}
+
+.button-container{
+    display:inline-block;
+    position:relative;
+    width: 18rem;
+    }
+    
+.editbt{
+    position: absolute;
+    top: 0.25rem;
+    right:0.5rem;
+    border-radius:1.5em;
+    color:rgb(63, 63, 63);
+    text-transform:uppercase;
+    padding: auto;
+    }

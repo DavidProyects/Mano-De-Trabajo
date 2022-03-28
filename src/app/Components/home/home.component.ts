@@ -1,3 +1,4 @@
+import { UsuariosService } from './../../Services/usuarios.service';
 import { Router } from '@angular/router';
 import { Resgister } from './../../models/register';
 import { Component, OnInit } from '@angular/core';
@@ -13,7 +14,9 @@ export class HomeComponent implements OnInit {
 
   productForm: FormGroup;
 
-  constructor(private fb: FormBuilder,) { 
+  constructor(private fb: FormBuilder,
+              private Router: Router,
+              private _usuarioservice: UsuariosService) { 
     
     this.productForm = this.fb.group({
       Nombre: ['', Validators.required],
@@ -47,6 +50,7 @@ export class HomeComponent implements OnInit {
       showConfirmButton: false,
       timer: 2000
     })
+    this.Router.navigate(['/']);
     
   }
 
