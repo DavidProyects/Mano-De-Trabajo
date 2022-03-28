@@ -1,11 +1,5 @@
-/*@font-face {
-    font-family: "TITLE";
-    src: url(../../../assets/FUENTES/aremat\ font.ttf);   
-}
-@font-face {
-    font-family: "BODY";
-    src: url(../../../assets/FUENTES/GOTHIC.TTF);  
-}*/
+
+
 /*ventana */
 #ventana{
 	
@@ -192,6 +186,7 @@ padding-top: 3%;
     border-bottom: solid 4px #56008c ;
     font-size: 1em;
     cursor: pointer;
+    font-family: title;
 }
 
 .menu ul #contenregistro img{
@@ -224,6 +219,7 @@ padding-top: 3%;
     color: black;
     border-radius: 25px;
     text-decoration: none;
+    font-family: title;
 }
 
 .menu li a:hover{
@@ -281,10 +277,13 @@ background-color: bisqu;
     color: #329b93;
 }
 #us #text p{
-    font-size: 1.5em;
-    padding: 5% 10% 0 10%;
+    font-size: 1.4em;
+    padding: 0% 10% 0 10%;
     text-align: justify;
     font-family: BODY;
+    
+
+
     }
 
     #offers{

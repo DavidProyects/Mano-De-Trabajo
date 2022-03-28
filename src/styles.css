@@ -1,33 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
-/*@font-face {
+@font-face {
     font-family: "TITLE";
-    src: url(../../../assets/FUENTES/aremat\ font.ttf);   
+    src: url(../src/assets/FUENTES/aremat.ttf);   
 }
 @font-face {
     font-family: "BODY";
-    src: url(../../../assets/FUENTES/GOTHIC.TTF);  
-}*/
-
-.temp {
-    background-color: blue;
-    box-sizing: border-box;
-    height: 5rem;
+    src: url(../src/assets/FUENTES/GOTHIC.TTF);  
 }
+
+
 
 body{
     margin: 0;
     padding: 0;
     
 }
-.static{
-    padding: 25px 0 25px 0 ;
-    width: 100%;
-    background-color: white;
-    border-bottom: 5px solid #56008c;
-    z-index: 1;
-    position: inherit;
-    height: 5rem;
-}
+
 
 header{
     padding: 25px 0 25px 0 ;
@@ -90,6 +78,7 @@ justify-content: flex-end;
     color: black;
     border-radius: 25px;
     text-decoration: none;
+    font-family: TITLE;
 }
 
 .menu li a:hover{
@@ -99,135 +88,9 @@ justify-content: flex-end;
 
 }
 
-/*#sectionbanner  {	
-	width: 100%;
-	height: 795px;
-    background-color: ;
-}
-
-#sectionbanner div {
-	width: 100%;
-	height: 795px;
-	display: flex;
-}
-
-#sectionbanner article{
-	width: 100%;
-	height: 795px;
-} 
-
-.slider{
-	width: 100%;
-	height:  770px;
-	margin: auto;
-	position: relative;
-	list-style: none;
-	padding: 0;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-}
-
-.slider img{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity:0 ;
-	transition: all 0.7s;
-}
-
-.slider video{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	opacity:0 ;
-	transition: all 0.7s;
-}
-
-.slider input[type="radio"] {
-	position: relative;
-	z-index: 50;
-	margin: 5px;	
-}
-
-.slider input[type="radio"]:checked ~ img {
-	opacity: 1;
-} 
-
-.slider input[type="radio"]:checked ~ video {
-	opacity: 1;
-}*/
 
 
 
-#us div{
-
-    width: 620px;
-    height: 520px;
-    background-color: rebeccapurpl;
-    padding-top: 3%;
-    float: left;
-}
-
-#us #text{
-margin-left: 11rem;
-background-color: bisqu;
 
 
-}
-#us #text h2{
-    font-size: 2em;
-    text-align: center;
-    font-family: "TITLE";
-    color: #329b93;
-}
-#us #text p{
-    font-size: 1.5em;
-    padding: 5% 10% 0 10%;
-    text-align: justify;
-    font-family: BODY;
-    }
-
-    #offers{
-
-        width: 100%;
-        height: 520px;
-        background-color:re;
-        justify-content: space-evenly;
-    }
-
-    #offers h3{
-        font-size: 2em;
-        font-family: TITLE;
-        color: #56008c;
-        text-align: center;
-    }
-
-    #offers div{
-
-        width: 315px;
-        height: 315px;
-        float: left;
-        margin: 5% 1.1% 0 1.6%;
-        background-color: #329b93;
-        cursor: pointer;
-        
-    }
-    #offers div p{
-        color: white;
-        font-family: BODY;
-        font-size: 2em;
-        margin-top: 40%;
-        text-align: center;
-        opacity: 0;
-
-    }
-    #offers div:hover p{
-        opacity: 1;
-        transition: 1s;
-    }
-
+    
