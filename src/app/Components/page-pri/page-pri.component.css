@@ -13,13 +13,14 @@ legend {
 
 .legend__text{
     margin-top: 70px;
-    color: #fff;
+    color:#56008c;
     text-align: center;
+    font-family: title;
 }
 
 .pribg{
     height: 100vh;
-    background-image: url("../../../assets/OFFI.jpg");
+    background-image: url("../../../assets/imagen4.jpg");
     background-size: cover;   
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -75,7 +76,7 @@ position: relative;
     top: 62%;
     height: 25%;
     background: #329b93;
-    color: purple;
+    color: white;
     padding: 0 25px;
     border: none;
     border-radius: 20px;
@@ -83,8 +84,17 @@ position: relative;
     font-weight: 700;
     cursor: pointer;
     border-color: peru;
+    transition: all 0.5s;
+    
 }
 
+.newsletter__submit:hover{
+
+    background-color:#56008c;
+    
+    
+    transition: 0.5s;
+}
 .bx-briefcase{
     display: inline-block;
     width: 20px;
@@ -131,7 +141,7 @@ position: relative;
 }
 
 .about__title{
-    color: #329b93;
+    color: white;
 }
 
 .about__paragraph{
@@ -191,7 +201,7 @@ position: relative;
 }
 
 .point{
-    color: #329b93;
+    color: #9b3232;
 }
 
 .bx-check{
